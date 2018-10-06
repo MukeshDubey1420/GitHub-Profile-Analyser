@@ -11,6 +11,11 @@
 ### Why do we need GitHub Profile Analyser ?
 The Github Profile Analyser tells the User about the no. of people visiting on his repos which **helps him/her in recognizing the popularity of his repos.** This helps the user in deciding or setting up the priorities among the repos as the repos that are more popular, obviously requires a much needed attention. The **profile analyser also tells how many forks and clones have been made since the user has made the repo. This helps the user in understanding the need of the project among the developers.**
 
+## Technology Stack
+	HTML,CSS,Bootstrap,JS(Frontend)
+	GitHub API connection.
+	Python,Flask,Jinja2(Backend)
+
 
 ### Front-End Information
 
@@ -34,62 +39,37 @@ The Github Profile Analyser tells the User about the no. of people visiting on h
 
 ![GraphPage](static/images/graph.png)
 
+* The Final page is of **Error Page** which displayed in case Server Breaks, Internet Connection User, Unauthenticated Login, **Page Not Found Error**.
+
 ### Error-404  Page :-
 
 ![ErrorPage](static/images/error.png)
 
-## Technology Stack
-	HTML,CSS,Bootstrap,JS(Frontend)
-	GitHub API connection.
-	Python,Flask,Jinja2(Backend)
+### Instructions:
 
-## How to contribute
-#### Download or clone the project
-	git clone https://github.com/MukeshDubey1420/GitHub-Profile-Analyser
+* The first page is usual login page which is made by using Bootstrap and additional CSS. It has two fields one is for **username** and another one is for **password**. Since **GitHub’s API** has been used, user can login only using **GitHub’s credentials**.
 
-#### Go to the Project Folder
-	cd Github-Profile-Analyzer
+* As soon as user hit the **Submit button**,*entered data is send to GitHub API for verification. If entered data is incorrect, then user will get error message displaying “Error: Bad credentials”* else user will be redirected to the main home page.
 
-#### Install the requirements
-	pip install -r requirements.txt
-#### Run the project on local server
-	python my_app.py
-
-### Contribution
-	You are free to contribute to Github-Profile-Analyzer.I would love to scale it.
-
-
-#### Designed With :heart: by  [@MukeshDubey1420](https://mukeshdubeyportfolio.netlify.com/   "My PortFolio Link")
-
-
-
-
-
-
-
-
-
-####space_for_image___
-Instructions:
-
-The first page is usual login page which is made by using Bootstrap and additional CSS. It has two fields one is for username and another one is for password. Since GitHub’s API has been used, user can login only using GitHub’s credentials.
-As soon as user hit the submit button, entered data is send to GitHub API for verification. If entered data is incorrect, then user will get error message displaying “Error: Bad credentials” else user will be redirected to the main home page.
-In the home page user can all his/her repositories in the form of a table. Table has many columns showing different information like repository name, total views, unique views, fork, clone etc. All this information is provided by using the GitHub’s API.
+* In the home page user can all his/her repositories in the form of a table. Table has many columns showing different information like repository name, total views, unique views, fork, clone etc. All this information is provided by using the GitHub’s API.
 There is another additional feature of graph in this project. User can see information about its repositories in a 2D graph. This graph has been made in the Plotly.
 
-Workflow
+### Workflow
 
-During login, the user has to enter his Github username and password. If username or password is not valid, then an error message will occur “Error: Bad Credentials”.
+* During login, the user has to enter his Github username and password. If username or password is not valid, then an error message will occur “Error: Bad Credentials”.
 
-If the user left the username and password textboxes empty and clicked on login, a message will be shown “Please fill out these fields”.
+* If the user left the username and password textboxes empty and clicked on login, a message will be shown “Please fill out these fields”.
 After logging in, the main web-application opens which is the Github profile Analyser. Here the user can see a table which tells all the important details about all the user’s repositories.
 
 
-On clicking graph button, the graph page is opened where 2d representation can be seen of all the repos against total visits etc.
+* On clicking graph button, the graph page is opened where 2d representation can be seen of all the repos against total visits etc.
 
-There are different options or tools which have been made available using PLOTLY. These tools include download plot as a PNG file, edit in chart studio, zoom, pan etc.
+* There are different options or tools which have been made available using PLOTLY. These tools include download plot as a PNG file, edit in chart studio, zoom, pan etc.
 
 
-GitHub API Connection:
+### GitHub API Connection:
 
-An API is basically a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service. To connect with Github API, we registered our web-application with auth0 in developer settings on github.com. Then github will provide us with client-id and client secret which we then copied on auth0 fields. Once we successfully authenticate a user, GitHub includes an Access Token in the user profile it returns to Auth0. This token is used to call their API. Github API is responsible for why we were able to analyse profiles from github user. Below is the code for a user which made this possible:
+* An API is basically a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service. To connect with Github API, we registered our web-application with auth0 in developer settings on github.com. Then github will provide us with client-id and client secret which we then copied on auth0 fields. Once we successfully authenticate a user, GitHub includes an Access Token in the user profile it returns to Auth0. This token is used to call their API. Github API is responsible for why we were able to analyse profiles from github user. Below is the code for a user which made this possible:
+
+
+#### Designed With :heart: by  [@MukeshDubey1420](https://mukeshdubeyportfolio.netlify.com/   "My PortFolio Link")
