@@ -28,6 +28,12 @@ The Github Profile Analyser tells the User about the no. of people visiting on h
 
 ![MainPage](static/images/profile.png)
 
+* The Third page is of **Graph Page** which has been produced using **PLOTLY**. Here a **2-D Graph** is generated which shows which repo is **more popular.**
+
+### Graph Page :-
+
+![GraphPage](static/images/graph.png)
+
 ### Error-404  Page :-
 
 ![ErrorPage](static/images/error.png)
@@ -63,9 +69,6 @@ The Github Profile Analyser tells the User about the no. of people visiting on h
 
 
 
-
-####space_for_image___
-The third page is of graph page which has been produced using PLOTLY. Here a 2d graph is generated which shows which repo is more popular.
 ####space_for_image___
 Instructions:
 
