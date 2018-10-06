@@ -2,24 +2,29 @@
 
 * A tool that will help you to analyze your **Github Repositories**.You can check every important detail at one place on same page.The project is using threading to make it fast.
 
-### What will our Web app do (Objectives)?
+### What will our Web app do (Objectives) ?
 * As the name suggests, it **analyses the User’s GitHub Profile.**
 * After Analysing User’s Github profile, it gives important details about **user’s repositories such as how many forks, clones have been made on each repository.**
 * Apart from that, it also shows how many people *(unique and total)* have visited the user’s repos.
 * There is another feature which **allows the user to have a 2d graph representation of all the details in user’s repos.**
 
-Why do we need GitHub Profile Analyser?
-The github profile analyser tells the user about the no of people visiting on his repos which helps him/her in recognizing the popularity of his repos. This helps the user in deciding or setting up the priorities among the repos as the repos that are more popular, obviously requires a much needed attention. The profile analyser also tells how many forks and clones have been made since the user has made the repo. This helps the user in understanding the need of the project among the developers.
+### Why do we need GitHub Profile Analyser ?
+The Github Profile Analyser tells the User about the no. of people visiting on his repos which **helps him/her in recognizing the popularity of his repos.** This helps the user in deciding or setting up the priorities among the repos as the repos that are more popular, obviously requires a much needed attention. The **profile analyser also tells how many forks and clones have been made since the user has made the repo. This helps the user in understanding the need of the project among the developers.**
 
-## Demo
-* Check the Snapshots of the projects here
 
-### Login Page :-
+### Front-End Information
+
+##### The front-end consists of 3 webpages:
+
+* The first page is **Homepage** where the user needs to **Login using his Github username and password.**
+
+### Home Page | Login Page :-
 
 ![LoginPage](static/images/demo.png)
 
+* The Second one is **Stats Page** where the user will be able to see the details **about his repos such as REPO NAME, CLONES, FORKS, UNIQUE VISITORS, TOTAL VISITORS and STARS.** In this page, the **User profile Pic** is also displayed in the left side **with his name, bio, following and followers.**
 
-### Main Page :-
+### Stats Page | Main Page :-
 
 ![MainPage](static/images/profile.png)
 
@@ -29,6 +34,7 @@ The github profile analyser tells the user about the no of people visiting on hi
 
 ## Technology Stack
 	HTML,CSS,Bootstrap,JS(Frontend)
+	GitHub API connection.
 	Python,Flask,Jinja2(Backend)
 
 ## How to contribute
@@ -54,18 +60,10 @@ The github profile analyser tells the user about the no of people visiting on hi
 
 
 
-The project consists of 3 parts.
-Frontend (done with HTML, CSS and Bootstrap).
-GitHub API connection.
-Flask (Python) backend.
 
-Front-End Information
 
- 	The front-end consists of 3 webpages:
 
-The first page is Home where the user needs to login using his github username and password.
 
-The second one is stats page where the user will be able to see the details about his repos such as REPO NAME, CLONES, FORKS, UNIQUE VISITORS, TOTAL VISITORS and STARS. In this page, the user profile pic is also displayed in the left side with his name, bio, following and followers.
 ####space_for_image___
 The third page is of graph page which has been produced using PLOTLY. Here a 2d graph is generated which shows which repo is more popular.
 ####space_for_image___
